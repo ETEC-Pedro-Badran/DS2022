@@ -10,4 +10,14 @@ class Mesa {
        return "Mesa $this->modelo - id: $this->id" ;
     }
 
+
+    function  __constructor($patrimonio,$id,$modelo,$preco,$dataAquisicao){
+        $this->patrimonio = $patrimonio;
+        $this->id = $id;
+        $this->modelo = $modelo;
+        $this->preco = $preco;
+        $this->dataAquisicao = $dataAquisicao;
+    }
+
+
 }

@@ -25,6 +25,10 @@ class Cadeira {
         $this->dataAquisicao = $dataAquisicao;
     }
 
+    function __destruct()
+    {
+        echo "<p>Cadeira destruída: $this->patrimonio";
+    }
 }
 
 
