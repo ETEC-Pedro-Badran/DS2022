@@ -11,8 +11,8 @@
    $cadeiraVerde->modelo = 'ADV54TY';
    $cadeiraVerde->dataAquisicao = '16/03/2022';
    */
-   $cadeiraVerde2 = new Cadeira(124,2,'Feltro','ADV54TY',55.0,'16/03/2022');
-   /*$cadeiraVerde2->patrimonio =  124;
+   /*$cadeiraVerde2 = new Cadeira(124,2,'Feltro','ADV54TY',55.0,'16/03/2022');
+   $cadeiraVerde2->patrimonio =  124;
    $cadeiraVerde2->id = 2;
    $cadeiraVerde2->material = 'Feltro';
    $cadeiraVerde2->preco = 55.0;
@@ -21,18 +21,22 @@
    */
 
    echo $cadeiraVerde->toString()."<br>";
-   echo $cadeiraVerde2->toString()."<br>";
+   
 
 
    $mesa1 = new Mesa(
       321,1,'MSA0234',223.40,'23/03/2022'
    );
+
+   $mesa->setPatrimonio("123");
+   echo "Numero do patrimônio ".$mesa->getPatrimonio();
    /*$mesa1->patrimonio =  321;
    $mesa1->id = 1;
    $mesa1->preco = 223.40;
    $mesa1->modelo = 'MSA0234';
-   $mesa1->dataAquisicao = '23/03/2022';*/
-
+   $mesa1->dataAquisicao = '23/03/2022';
+*/
+    
    echo $mesa1->toString()."<br>";
 
 

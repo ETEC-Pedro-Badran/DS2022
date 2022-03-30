@@ -1,10 +1,10 @@
 <?php
 class Mesa {
-    public $patrimonio;
-    public $id;
-    public $modelo;
-    public $preco;
-    public $dataAquisicao;
+    private $patrimonio;
+    private $id;
+    private $modelo;
+    private $preco;
+    private $dataAquisicao;
 
     function toString(){
        return "Mesa $this->modelo - id: $this->id" ;
@@ -19,5 +19,23 @@ class Mesa {
         $this->dataAquisicao = $dataAquisicao;
     }
 
+    function __destruct()
+    {
+        echo "<p>Mesa destruída: $this->patrimonio";
+    
+    }
+
+
+    function getPatrimonio(){
+        return $this->patrimonio;
+    }
+    function setPatrimonio(String $patrimonio){
+        if (isset($patrimonio)) {
+           $this->patrimonio = $patrimonio;
+        }
+    }
+
+
+    
 
 }
