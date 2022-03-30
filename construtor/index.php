@@ -28,8 +28,8 @@
       321,1,'MSA0234',223.40,'23/03/2022'
    );
 
-   $mesa->setPatrimonio("123");
-   echo "Numero do patrimônio ".$mesa->getPatrimonio();
+   $mesa1->setPatrimonio("123");
+   echo "Numero do patrimônio ".$mesa1->getPatrimonio();
    /*$mesa1->patrimonio =  321;
    $mesa1->id = 1;
    $mesa1->preco = 223.40;
